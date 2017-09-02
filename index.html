@@ -20,6 +20,13 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<!--custom styles-->
+		<style>
+.third {
+	width:30%;
+	display: inline-block;
+}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
@@ -28,13 +35,39 @@
 					<h1>Caves</h1>
 					<h2>Matthew Gatland</h2>
 				</section>
+
 				<section data-background-image="caves.png">
 				</section>
+
 				<section>
-					<h2>Concept</h2>
+					<h2>About Me</h2>
+					<div class="third fragment">
+						<p>2006</p>
+						<img width="100%" src="trail-bay.jpg">
+						<p>Trail Bay</p>
+						<p>$0</p>
+					</div>
+					<div class="third fragment">
+						<p>2010</p>
+						<img width="100%" src="space-hawk-1.jpg">
+						<p>Space Hawk</p>
+						<p class="fragment">$0</p>
+					</div>
+					<div class="third fragment">
+						<p>2010</p>
+						<img width="100%" src="space-octopus-mono.png">
+						<p>Space Octopus</p>
+						<p class="fragment">$34.38 NZD</p>
+					</div>
+					<p class="fragment">(plus over 50 non-commercial games)</p>
+				</section>
+
+				<section>
+					<h2>About Caves</h2>
+					<p class="fragment">"Story-driven exploration in a fully destructible world"</p>
 					<ul>
 						<li class="fragment">Mining and exploration</li>
-						<li class="fragment">Destructable crystalline environment</li>
+						<li class="fragment">Destructible crystalline environment</li>
 						<li class="fragment">A story-filled world, not procedural emptiness</li>
 					</ul>
 				</section>
