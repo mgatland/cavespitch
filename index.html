@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>reveal.js</title>
+    <title>Caves Kiwi Game Starter pitch</title>
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/black.css">
@@ -18,6 +18,7 @@
       link.rel = 'stylesheet';
       link.type = 'text/css';
       link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
     <!--custom styles-->
@@ -25,6 +26,12 @@
 .third {
   width:30%;
   display: inline-block;
+}
+.reveal section img.nofx { 
+  background:none; 
+  border:none; 
+  box-shadow:none; 
+  margin: 0
 }
     </style>
   </head>
@@ -37,18 +44,22 @@
         </section>
 
         <section data-background-image="caves.png">
+        <p>.</p>
         </section>
 
         <section>
-          <h2>About Caves</h2>
-          <p class="fragment">"Story-driven exploration in a fully destructible world"</p>
+          <h2>Caves</h2>
           <ul>
-            <li class="fragment">Mining and exploration</li>
-            <li class="fragment">Destructible crystalline environment</li>
-            <li class="fragment">A story-filled world, not procedural emptiness</li>
+            <li class="fragment">Explore a procedurally generated world</li>
+            <li class="fragment">Dig through a fully destructible environment</li>
+            <li class="fragment">Befriend strange creatures and learn their secrets</li>
+            <li class="fragment">Discover new technologies to build your base and upgrade your ship</li>
+            <li class="fragment">Follow the main quest, or make your own story</li>
           </ul>
+          <p class="fragment">"Story-driven exploration in a fully destructible world"</p>
         </section>
 
+<!--
         <section>
           <h2>Trends</h2>
           <img width=300 src="thunderbirds.jpg" class="fragment" data-fragment-index="1">
@@ -60,59 +71,52 @@
             <li class="fragment" class="fragment" data-fragment-index="3">Quirky characters and interesting stories</li>
           </ul>
         </section>
-        <!--<section>
-          <h2>Key Features</h2>
+-->
+
+        <section>
+          <h2>Points of difference</h2>
+          <img width=300 src="triangles-vs-squares.png" class="fragment" data-fragment-index="1">
+          <img width=300 src="story-in-proc.png" class="fragment" data-fragment-index="2">
+          <img width=300 src="cartoon.png" class="fragment" data-fragment-index="3">
           <ul>
-            <li>Explore a procedurally generated world, full of danger</li>
-            <li>Dig through a fully destructible polygon environment</li>
-            <li>Befriend strange creatures, earn their trust and learn their secrets</li>
-            <li>Develop new technologies to build your base and upgrade your ship</li>
-            <li>Follow the main quest to save your people, or freely explore and make your own story</li>
+            <li class="fragment" class="fragment" data-fragment-index="1">Triangles, not squares</li>
+            <li class="fragment" class="fragment" data-fragment-index="2">Story in a procedural world</li>
+            <li class="fragment" class="fragment" data-fragment-index="3">Retro cartoon aesthetic </li>
           </ul>
-        </section>-->
+        </section>
+
         <section>
           <h2>Market Expectations</h2>
           <ul>
+            <li class="fragment">Super Motherload (2011): <b>67,000</b> owners</li>
+            <li class="fragment">Cave Story (2011): <b>820,000</b></li>
+            <!--<li class="fragment">Steamworld Dig (2013): <b>510,000</b></li>-->
+            <li class="fragment">PixelJunk™ Shooter (2013): <b>153,000</b></li>
+            <li class="fragment">Undertale (2015): <b>2,800,000</b></li>
+            <!-- 
             <li>Starbound (2016): 3,100,000 owners</li>
-            <li>Undertale (2015): 2,800,000</li>
             <li>Super Win the Game (2014): 38,000</li>
-            <li>PixelJunk™ Shooter (2013): 153,000</li>
             <li>Spelunky (2013): 930,000</li>
-            <li>Steamworld Dig (2013): 510,000</li>
             <li>Terraria (2011): 9,500,000</li>
-            <li>Cave Story (2011): 820,000</li>
-            <li>Super Motherload (2011): 67,000</li>
             <li>VVVVVV (2010): 1,100,000</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Points of difference</h2>
-          <ul>
-            <li class="fragment">Unique polygon environment</li>
-            <li class="fragment">Hand-made rooms and story elements mixed into a procedural world</li>
-            <li class="fragment">Retro (but not pixel art) aesthetic</li>
+            -->
           </ul>
         </section>
         <section>
           <h2>About Me</h2>
+          <p class="fragment">2009–2013: Software Engineer at Orion Health</p>
+          <p class="fragment">2013 onwards: Weird stuff</p>
+          <p class="fragment">Commercial games:</p>
           <div class="third fragment">
-            <p>2006</p>
             <img width="100%" src="trail-bay.jpg">
-            <p>Trail Bay</p>
-            <p>$0</p>
           </div>
           <div class="third fragment">
-            <p>2010</p>
             <img width="100%" src="space-hawk-1.jpg">
-            <p>Space Hawk</p>
-            <p class="fragment">$0</p>
           </div>
           <div class="third fragment">
-            <p>2010</p>
             <img width="100%" src="space-octopus-mono.png">
-            <p>Space Octopus</p>
-            <p class="fragment">$34.38 NZD</p>
           </div>
+          <p class="fragment">Total revenue: $34.38</p>
           <p class="fragment">(plus over 50 non-commercial games)</p>
         </section>
 
@@ -120,21 +124,34 @@
           <h2>Strategy</h2>
           <ul>
             <li class="fragment">Finish the game</li>
-            <li class="fragment">Build audience</li>
-            <li class="fragment">Mid-term: approach press and streamers, take the game to PAX</li>
-          </ul>
-          <ul>
-            <li class="fragment">Early: devlogs and devblogs, web presence</li>
-            <li class="fragment">Continue to improve the game's look and feel</li>
-            <li class="fragment">Mid-term: approach press and streamers, take the game to PAX</li>
+            <li class="fragment">Continue playtesting</li>
+            <li class="fragment">Build audience 
+              <img src="youtube.png" class="fragment nofx" width="32">
+              <img src="twitter.png" class="fragment nofx" width="32">
+              <img src="reddit.svg" class="fragment nofx" width="32">
+              <img src="tigsource.gif" class="fragment nofx" width="32">
+            </li>
+            <li class="fragment"><strike>Kickstarter</strike> <span class="fragment">Publisher?</span></li>
+            <li class="fragment">Publish on Steam</li>
           </ul>
         </section>
+
+        <section>
+          <p>Why Kiwi Game Starter?</p>
+          <ul>
+            <li class="fragment">Money → summer of Caves</li>
+            <li class="fragment">Marketing and promotion</li>
+            <li class="fragment">…</li>
+            <li class="fragment">(Money → trailer?)</li>
+          </ul>
+        </section>
+
         <section>
           <h2>Conclusion</h2>
           <ul>
             <li class="fragment">Caves is unique while still fitting into current sandbox, procedural generation &amp; nostalgia trends</li>
-            <li class="fragment">I have experience shipping software and know how to finish things</li>
-            <li class="fragment">Marketing will ramp up as the game becomes more finished</li>
+            <li class="fragment">Playtesters enjoy the game and want more!</li>
+            <li class="fragment">I think it will be successful but I need your help!</li>
           </ul>
         </section>
       </div>
