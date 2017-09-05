@@ -33,6 +33,27 @@
   box-shadow:none; 
   margin: 0
 }
+
+/*collapse hidden fragments */
+.overlaid-container {
+  position: relative;
+}
+.overlaid-inside {
+  position: absolute;
+  top:0;
+  left:0;
+}
+.w600 {
+  width:600px;
+}
+
+html.blur .backgrounds {
+  -webkit-filter: blur(5px);
+ -moz-filter: blur(10px);
+ -o-filter: blur(5px);
+ -ms-filter: blur(5px);
+ filter: blur(5px);
+}
     </style>
   </head>
   <body>
@@ -44,10 +65,10 @@
         </section>
 
         <section data-background-image="caves.png">
-        <p>.</p>
+        <p>&nbsp;</p>
         </section>
 
-        <section>
+        <section data-background-image="caves2.png">
           <h2>Caves</h2>
           <ul>
             <li class="fragment">Explore a procedurally generated world</li>
@@ -88,11 +109,17 @@
         <section>
           <h2>Market Expectations</h2>
           <ul>
-            <li class="fragment">Super Motherload (2011): <b>67,000</b> owners</li>
-            <li class="fragment">Cave Story (2011): <b>820,000</b></li>
+            <div class="overlaid-container">
+            <img src="img/supermotherload.jpg" class="fragment w600" data-fragment-index="1">
+            <img src="img/cavestory.jpg" class="fragment overlaid-inside w600" data-fragment-index="2">
+            <img src="img/pixeljunkshooter.jpg" class="fragment overlaid-inside w600" data-fragment-index="3">
+            <img src="img/undertale.png" class="fragment overlaid-inside w600" data-fragment-index="4">
+            </div>
+            <li class="fragment" data-fragment-index="1">Super Motherload (2011): <b>67,000</b> owners</li>
+            <li class="fragment" data-fragment-index="2">Cave Story (2011): <b>820,000</b></li>
             <!--<li class="fragment">Steamworld Dig (2013): <b>510,000</b></li>-->
-            <li class="fragment">PixelJunk™ Shooter (2013): <b>153,000</b></li>
-            <li class="fragment">Undertale (2015): <b>2,800,000</b></li>
+            <li class="fragment" data-fragment-index="3">PixelJunk™ Shooter (2013): <b>153,000</b></li>
+            <li class="fragment" data-fragment-index="4">Undertale (2015): <b>2,800,000</b></li>
             <!-- 
             <li>Starbound (2016): 3,100,000 owners</li>
             <li>Super Win the Game (2014): 38,000</li>
@@ -141,7 +168,6 @@
           <ul>
             <li class="fragment">Money → summer of Caves</li>
             <li class="fragment">Marketing and promotion</li>
-            <li class="fragment">…</li>
             <li class="fragment">(Money → trailer?)</li>
           </ul>
         </section>
@@ -149,7 +175,7 @@
         <section>
           <h2>Conclusion</h2>
           <ul>
-            <li class="fragment">Caves is unique while still fitting into current sandbox, procedural generation &amp; nostalgia trends</li>
+            <li class="fragment">Caves is a new idea, but fits into current sandbox, procedural generation &amp; nostalgia trends</li>
             <li class="fragment">Playtesters enjoy the game and want more!</li>
             <li class="fragment">I think it will be successful but I need your help!</li>
           </ul>
